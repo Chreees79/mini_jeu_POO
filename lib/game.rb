@@ -22,7 +22,6 @@ class Game
     end
   end
 
-#METHOD TO VERIFY IF GAME IS STILL IN PROGRESS ------------------------------------------------------------------------------------------------
   def is_still_ongoing?
      if @human_player.life_points > 0 && @players_left > 0
       return true
