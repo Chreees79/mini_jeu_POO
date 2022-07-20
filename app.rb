@@ -8,11 +8,11 @@ require_relative 'lib/player'
 player1 = Player.new("Josiane")
 player2 = Player.new("José")
 puts
-puts "                                ----------------------------------------------------------"
-puts "                               | Bievenue dans le jeu de combat ILS VEULENT TOUS MA POO ! |"
-puts "                               |                 🧨  🧨  🧨  🧨  🧨  🧨                     |"
-puts "                               |    Le but du jeu est d'être le dernier survivant !       |"
-puts "                                ----------------------------------------------------------"
+puts " " * 32 + "-" * 58
+puts " " * 31 + "| Bievenue dans le jeu de combat ILS VEULENT TOUS MA POO ! |"
+puts " " * 31 + "|" + " " * 17 + "🧨  🧨  🧨  🧨  🧨  🧨" + " "* 19 + "|"
+puts " " * 31 + "|    Le but du jeu est d'être le dernier survivant !       |"
+puts " " * 32 + "-" * 58
 sleep 1
 
 # EXECUTION OF GAME --------------------------------------------------------------------------------------------------------------
@@ -29,7 +29,7 @@ while player1.life_points > 0 || player2.life_points > 0 do
   puts " 〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰"
   puts
   puts
-  puts"                               🧨    🧨    🧨    🧨    🧨     ATTACK!!     🧨   🧨    🧨    🧨     🧨    🧨"
+  puts" " * 31 + "🧨    🧨    🧨    🧨    🧨     ATTACK!!     🧨   🧨    🧨    🧨     🧨    🧨"
   puts 
   player1.attacks(player2)
   if player2.life_points <= 0
@@ -42,4 +42,4 @@ while player1.life_points > 0 || player2.life_points > 0 do
   puts
 end
 puts
-puts "                                  🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟  END OF GAME !!!  🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟"
+puts " " * 37 + "🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟  END OF GAME !!!  🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟"
